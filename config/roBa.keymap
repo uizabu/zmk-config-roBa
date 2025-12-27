@@ -8,6 +8,9 @@
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
+    bindings = <&kp>, <&kp>;
+
+    tapping-term-ms = <1000>;
 };
 
 &trackball {
