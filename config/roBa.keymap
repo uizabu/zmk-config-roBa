@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -27,7 +28,6 @@
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
-
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 &mt {
@@ -37,6 +37,8 @@
 
     tapping-term-ms = <1000>;
 };
+
+&lt { tapping-term-ms = <1000>; };
 
 &trackball {
     automouse-layer = <4>;
