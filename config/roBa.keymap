@@ -124,10 +124,10 @@
 
         default_layer {
             bindings = <
-&mt ESCAPE Q    &kp W         &kp E         &kp R         &kp T                                                                  &kp Y        &kp U  &kp I      &kp O       &kp P
-&mt JP_AT A     &mt DOLLAR S  &kp D         &kp F         &kp G        &trans                             &mt JP_DQUOTE JP_QUOTE &kp H        &kp J  &kp K      &kp L       &kp MINUS
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V        &kp B                              &kp JP_UNDERSCORE      &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt EXCLAMATION QUESTION
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &kp JP_HANZEN &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE          &lt 1 ENTER                                &kp DEL
+&mt ESCAPE Q    &kp W         &kp E             &kp R          &kp T                                                                   &kp Y        &kp U  &kp I      &kp O       &kp P
+&mt JP_AT A     &mt DOLLAR S  &kp D             &kp F          &kp G        &trans                             &mt JP_DQUOTE JP_QUOTE  &kp H        &kp J  &kp K      &kp L       &kp MINUS
+&kp LEFT_SHIFT  &kp Z         &kp X             &kp C          &kp V        &kp B                              &kp JP_UNDERSCORE       &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt EXCLAMATION QUESTION
+&kp LCTRL       &kp LEFT_WIN  &mt LEFT_ALT TAB  &kp JP_HANZEN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE           &lt 1 ENTER                                &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -146,10 +146,10 @@
 
         NUM {
             bindings = <
-&kp JP_PLUS             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0                                &kp JP_LBRACE         &kp JP_RBRACE          &kp SLASH          &kp JP_YEN        &trans
-&kp MINUS               &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD       &trans         &kp JP_COLON   &kp JP_LPAREN         &kp JP_RPAREN          &kp LESS_THAN      &kp GREATER_THAN  &kp JP_TILDE
-&mt LSHIFT JP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp HASH         &kp JP_EQUAL   &kp SEMICOLON  &kp JP_LBRACKET       &kp JP_RBRACKET        &trans             &trans            &trans
-&mt LCTRL SLASH         &kp PERCENT      &kp JP_CARET     &trans           &trans           &trans         &kp BACKSPACE  &trans                                                                            &kp DELETE
+&kp JP_PLUS             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0                                   &kp JP_LBRACE    &kp JP_RBRACE    &kp SLASH      &kp JP_YEN        &trans
+&kp MINUS               &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD       &trans            &kp JP_COLON   &kp JP_LPAREN    &kp JP_RPAREN    &kp LESS_THAN  &kp GREATER_THAN  &kp JP_TILDE
+&mt LSHIFT JP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp HASH         &kp JP_EQUAL      &kp SEMICOLON  &kp JP_LBRACKET  &kp JP_RBRACKET  &trans         &trans            &trans
+&mt LCTRL SLASH         &kp PERCENT      &kp JP_CARET     &trans           &trans           &trans            &kp BACKSPACE  &trans                                                             &kp DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
