@@ -126,7 +126,7 @@
             bindings = <
 &mt ESCAPE Q    &kp W         &kp E             &kp R          &kp T                                                                   &kp Y        &kp U  &kp I      &kp O       &kp P
 &mt JP_AT A     &mt DOLLAR S  &kp D             &kp F          &kp G        &trans                             &mt JP_DQUOTE JP_QUOTE  &kp H        &kp J  &kp K      &kp L       &kp MINUS
-&kp LEFT_SHIFT  &kp Z         &kp X             &kp C          &kp V        &kp B                              &kp JP_UNDERSCORE       &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt EXCLAMATION QUESTION
+&kp LEFT_SHIFT  &kp Z         &kp X             &kp C          &kp V        &lt 6 B                            &kp JP_UNDERSCORE       &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt EXCLAMATION QUESTION
 &kp LCTRL       &kp LEFT_WIN  &mt LEFT_ALT TAB  &kp JP_HANZEN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE           &lt 1 ENTER                                &kp DEL
             >;
 
