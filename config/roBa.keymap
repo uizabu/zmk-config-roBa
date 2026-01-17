@@ -113,11 +113,13 @@
         slow_mouse_hold: slow_mouse_hold {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+
             bindings =
                 <&macro_press>,
-                <&pointing_move_scale 25 &pointing_scroll_scale 25>,
+                <&pmw3610_cpi_set 100>,
+
                 <&macro_release>,
-                <&pointing_move_scale 100 &pointing_scroll_scale 100>;
+                <&pmw3610_cpi_set 400>;
 
             label = "SLOW_MOUSE_HOLD";
         };
