@@ -98,7 +98,7 @@
         mkp_exit_AML: mkp_exit_AML {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = 
+            bindings =
                 <&macro_press>,
                 <&macro_param_1tol &mkp MACRO_PLACEHOLDER>,
                 <&macro_pause_for_release>,
@@ -109,25 +109,22 @@
 
             label = "MKP_EXIT_AML";
         };
-
-
     };
 
-        mkp_exit_AML: mkp_ext_AML {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = 
-                <&macro_press>,
-                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-                <&macro_tap>,
-                <&sl 4>;
+    mkp_exit_AML: mkp_ext_AML {
+        compatible = "zmk,behavior-macro-one-param";
+        #binding-cells = <1>;
+        bindings =
+            <&macro_press>,
+            <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
+            <&macro_pause_for_release>,
+            <&macro_release>,
+            <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
+            <&macro_tap>,
+            <&sl 4>;
 
-            label = "MKP_EXIT_AML";
-        };
-            
+        label = "MKP_EXIT_AML";
+    };
 
     behaviors {
         // 新しいスクロール動作の追加
@@ -201,10 +198,10 @@
 
         MOUSE {
             bindings = <
-&trans          &trans  &trans  &trans  &trans                      &trans  &trans     &trans     &trans      &trans
-&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1   &mkp MB2   &kp LC(F1)  &trans
-&kp LEFT_SHIFT  &trans  &kp X   &kp C   &kp V   &trans      &trans  &trans  &kp LC(C)  &kp LC(V)  &trans      &trans
-&kp LCTRL       &trans  &trans  &trans  &trans  &trans      &trans  &trans                                    &trans
+&to_layer_0 Q   &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                                             &to_layer_0 Y  &to_layer_0 U      &to_layer_0 I      &to_layer_0 O       &to_layer_0 P
+&to_layer_0 A   &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &trans             &to_layer_0 SQT         &to_layer_0 H  &mkp_exit_AML MB1  &mkp_exit_AML MB2  &to_layer_0 LC(F1)  &to_layer_0 MINUS
+&kp LEFT_SHIFT  &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B      &to_layer_0 UNDERSCORE  &to_layer_0 N  &to_layer_0 LC(C)  &to_layer_0 LC(V)  &to_layer_0 PERIOD  &to_layer_0 QUESTION
+&kp LCTRL       &trans         &trans         &trans         &trans         &trans             &trans                  &trans                                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
