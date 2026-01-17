@@ -110,19 +110,6 @@
             label = "MKP_EXIT_AML";
         };
 
-        slow_mouse_hold: slow_mouse_hold {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-
-            bindings =
-                <&macro_press>,
-                <&pmw3610_cpi_set 100>,
-
-                <&macro_release>,
-                <&pmw3610_cpi_set 400>;
-
-            label = "SLOW_MOUSE_HOLD";
-        };
     };
 
     behaviors {
