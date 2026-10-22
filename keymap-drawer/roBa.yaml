@@ -89,7 +89,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   NUM:
-  - ':'
+  - {t: ':', h: ESCAPE}
   - KP 1
   - KP 2
   - KP 3
@@ -177,7 +177,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   MOUSE:
-  - '&to_layer_0 Q'
+  - {t: '&to_layer_0 Q', h: ESCAPE}
   - '&to_layer_0 W'
   - '&to_layer_0 E'
   - '&to_layer_0 R'
@@ -221,7 +221,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   MOUSE_AFTER_CLICK:
-  - '&to_layer_0 Q'
+  - {t: '&to_layer_0 Q', h: ESCAPE}
   - '&to_layer_0 W'
   - '&to_layer_0 E'
   - '&to_layer_0 R'
