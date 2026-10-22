@@ -38,7 +38,12 @@
     tapping-term-ms = <400>;
 };
 
-&lt { tapping-term-ms = <400>; };
+// 長押しの途中で別のキーを押して離したら、その時点でレイヤーを切り替える
+
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <400>;
+};
 
 &trackball {
     automouse-layer = <4>;
@@ -107,6 +112,17 @@
             tapping-term-ms = <200>;
         };
 
+        // B 用。文字キーなので、0.4秒押し続けたときだけレイヤーを切り替える（打鍵中の誤爆防止）
+
+        lt_slow: lt_slow {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <400>;
+            bindings = <&mo>, <&kp>;
+            display-name = "Layer-Tap (slow)";
+        };
+
         tog_off: tog_off {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
@@ -122,7 +138,7 @@
             bindings = <
 &mt ESCAPE Q    &kp W         &kp E             &kp R          &kp T                                                  &kp Y        &kp U  &kp I      &kp O       &kp P
 &mt JP_AT A     &mt DOLLAR S  &kp D             &kp F          &kp G        &trans            &mt JP_DQUOTE JP_QUOTE  &kp H        &kp J  &kp K      &kp L       &kp MINUS
-&kp LEFT_SHIFT  &kp Z         &kp X             &kp C          &kp V        &lt 7 B           &kp JP_UNDERSCORE       &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt EXCLAMATION QUESTION
+&kp LEFT_SHIFT  &kp Z         &kp X             &kp C          &kp V        &lt_slow 7 B      &kp JP_UNDERSCORE       &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt EXCLAMATION QUESTION
 &kp LCTRL       &kp LEFT_WIN  &mt LEFT_ALT TAB  &kp JP_HANZEN  &lt 2 SPACE  &lt 3 K_BACK      &kp BACKSPACE           &lt 1 ENTER                                &kp DEL
             >;
 
